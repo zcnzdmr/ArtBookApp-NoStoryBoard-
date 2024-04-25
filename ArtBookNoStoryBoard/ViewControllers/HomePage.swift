@@ -50,7 +50,8 @@ class HomePage: UIViewController {
     
     func toDetail(index:Paintings) {
 //        self.present(DetailPage(index: index), animated: true)
-        show(DetailPage(index: index), sender: nil)
+        self.navigationController?.pushViewController(DetailPage(index: index), animated: true)
+//        show(DetailPage(index: index), sender: nil)
     }
 
 }
